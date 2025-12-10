@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: lab
+    password: qwer1234
+    driver-class-name: oracle.jdbc.OracleDriver
+
+jpa:
+  hibernate:
+    ddl-auto: none
+  properties:
+    hibernate:
+      format_sql: true
+      show_sql: true
+  open-in-view: false
+
+logging:
+  level:
+    org.hibernate.sql: debug
+    org.hibernate.type.descriptor.sql: trace
